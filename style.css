@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    /* Primary */
+    --primary-green: hsl(75, 94%, 57%);
+
+    /* Neutral */
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 20%);
+    --neutral-dark-grey: hsl(0, 0%, 12%);
+    --neutral-off-black: hsl(0, 0%, 8%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--neutral-off-black);
+    color: var(--neutral-white);
+
+    height: 100vh;
+}
+
+.container {
+    width: 319px;
+    margin: 0 auto;
+    background: var(--neutral-dark-grey);
+    padding: 30px;
+    height: 515px;
+    border-radius: 9px;
+    margin-top: calc(50vh - 258px);
+    font-size: 14px;
+
+
+    img {
+        display: block;
+        margin: 8px auto;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        object-fit: cover;
+    }
+
+    h2.name {
+        margin-top: 1.4rem;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    p.ubication {
+        text-align: center;
+        color: var(--primary-green);
+        font-size: 12px;
+        padding: 5px;
+        font-weight: 600;
+    }
+
+    p.skills {
+        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+        margin-top: 15px;
+        color: hsl(0, 0%, 72%);
+
+    }
+
+}
+
+.enlaces {
+    margin-top: 1.4rem;
+
+    li {
+        list-style-type: none;
+
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15px;
+        background: var(--neutral-grey);
+        padding: 12px;
+        margin-block: 13px;
+        border-radius: 9px;
+        text-align: center;
+        cursor: pointer;
+        padding-block: 12px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    li:hover {
+        background: var(--primary-green);
+        color: var(--neutral-off-black);
+    }
+}
